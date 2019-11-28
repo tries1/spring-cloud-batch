@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: local
+
+#local
+---
+
+spring:
+  profiles: local
+  datasource:
+      url: jdbc:mysql://127.0.0.1:3306/batchdb
+      username: batch_user
+      password: batch_user
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  batch:
+    job:
+      names: ${job.name:NONE}
+
+logging:
+  level:
+    root: info
+
