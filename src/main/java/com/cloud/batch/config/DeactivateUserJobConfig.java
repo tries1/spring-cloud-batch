@@ -22,7 +22,7 @@ import com.cloud.batch.model.User;
 
 @Configuration
 @RequiredArgsConstructor
-public class InactiveUserJobConfig {
+public class DeactivateUserJobConfig {
 
     private final JobBuilderFactory jobBuilderFactory;
     private final StepBuilderFactory stepBuilderFactory;
